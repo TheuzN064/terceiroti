@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa de Ano Novo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Outfit:wght@100..900&family=Protest+Strike&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <audio id="background-music" autoplay loop hidden>
+        <source src="The Celebrated Minuet.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <header>
+        <div class="banner">
+            <div class="banner-text">
+                <h1>Rifa de Ano Novo</h1>
+                <p>Participe da rifa e concorra a prêmios incríveis!.</p>
+                <p>Cada número custa <strong>R$6,00</strong></p>
+            </div>
+            <img src="rifa.jpg" alt="Rifa Ano Novo" class="banner-img" id="promo-img">
+            <br>
+            <br>
+            <a href="contato.html" target="_blank" class="btn">
+            Entrar em contato
+            </a>
+        </div>
+    </header>
+
+    <!-- Flocos de neve -->
+    <div class="snow" id="snow-container"></div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <h2>Informações da Rifa:</h2>
+            <p>Participe da nossa rifa de Ano Novo e concorra a prêmios incríveis! O sorteio ocorrerá no dia 22 de janeiro de 2025, pelo Instagram. O número sorteado ganhará R$ 150,00 em Pix e um delicioso chocotone. Caso o ganhador não goste de chocotone, será enviado um Pix no valor correspondente. Para participar, basta escolher e comprar um número, entrar em contato via WhatsApp ou Instagram e informar o seu nome completo. O valor da rifa é de R$ 6,00.</p>
+            <button class="modal-close" id="modal-close">Fechar</button>
+        </div>
+    </div>
+    <div class="audio-controls">
+        <button id="music-toggle">🔈</button>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 3° TII, Nygel & Matheus E., Inc.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #e2e2e2, #b6b6b6);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh; /* Garante que a altura total seja suficiente */
+            padding-bottom: 50px; /* Espaço para o footer */
+        }
+
+        header {
+            text-align: center;
+            background: #4CAF50;
+            color: white;
+            padding: 20px 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Sacramento', cursive;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Estilos do Contato */
+        .contato {
+            text-align: center;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #e2e2e2;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contato h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .contato p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Botões de contato */
+        .contato a.btn {
+            display: inline-block;
+            width: 90%;
+            max-width: 400px;
+            margin: 10px auto;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            padding: 15px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contato a.btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .contato a.btn.whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E); /* WhatsApp gradiente */
+        }
+
+        .contato a.btn.instagram {
+            background: linear-gradient(135deg, #F58529, #DD2A7B, #8134AF); /* Instagram gradiente */
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .contato a.btn {
+                font-size: 0.9rem;
+                padding: 12px 15px;
+            }
+        }
+
+        .christmas-tree {
+            width: 200px; /* Largura fixa para a árvore */
+            position: fixed; /* Fixada na tela */
+            bottom: -1px; /* Alinhada à base */
+            right: -10px; /* Alinhada à direita */
+            z-index: 1000; /* Garante que fique acima de outros elementos */
+            text-align: right; /* Alinha visualmente o conteúdo para a direita */
+            animation: blink 1.5s infinite; /* Pisca-pisca para o GIF */
+        }
+
+        /* Animação de pisca-pisca */
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .christmas-tree {
+                width: 150px; /* Reduz a árvore no mobile */
+            }
+        }
+
+        .footer {
+            color: rgba(0, 0, 0, 0.603);
+            display: flex;
+            justify-content: center; /* Alinha o conteúdo horizontalmente */
+            align-items: center;     /* Alinha o conteúdo verticalmente */
+            padding: 5px;
+            position: fixed; /* Fixa o footer no fundo da tela */
+            bottom: 0;
+            width: 100%; /* Garante que ocupe toda a largura da tela */
+            font-size: 10px;
+            height: 20px; 
+            border-top: 1px solid rgba(0, 0, 0, 0.603);
+            z-index: 999; /* Garante que o footer fique acima de outros elementos */
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .footer {
+                font-size: 10px;
+                height: 40px; /* Ajuste a altura para dispositivos menores */
+            }
+        }
